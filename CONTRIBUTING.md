@@ -7,6 +7,8 @@
 
 - **Step 1** - Fork this repository.
 - **Step 2** - Clone the repository to your local machine.
+- **Step 3** - Navigate to the folder in which you want to contribute and keep the folder arragements in mind.
+- **Step 4** - If desired folder doesn't exist or you're making an individual contribution, create a folder according to the pattern of other folders.
 - **Step 3** - Resolve the bugs, mentions provided in the Issues section of the repository or just make an individual contribution yourself. _Also add a description of what changes you have done_.
 - **Step 4** - Add the changes to your repository.
 - **Step 5** - Create a PULL Request. And that's all.
