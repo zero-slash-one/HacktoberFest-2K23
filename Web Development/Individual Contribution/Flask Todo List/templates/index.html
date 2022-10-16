@@ -1,0 +1,68 @@
+{% extends 'base.html' %} {% block body %}
+<div class="container my-5">
+  <h2>Add Todo Item</h2>
+  <form action="/" method="POST">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        name="title"
+        id="title"
+        aria-describedby="emailHelp"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label">Description</label>
+      <input type="text" name="desc" class="form-control" id="desc" />
+    </div>
+
+    <button type="submit" class="btn btn-outline-success">Submit</button>
+  </form>
+</div>
+<div class="container my-5">
+  <h2>Todo Items</h2>
+  {% if allTodo|length==0 %}
+  <div class="alert alert-warning alert-dismiss" role="alert">
+    No tasks found. Make your Todo list by using above form.
+  </div>
+  {% else %}
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Item</th>
+        <th scope="col">Title</th>
+        <th scope="col">Description</th>
+        <th scope="col">Time</th>
+        <th scope="col">Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for todo in allTodo %}
+      <tr>
+        <th scope="row">{{loop.index}}</th>
+        <td>{{todo.title}}</td>
+        <td>{{todo.desc}}</td>
+        <td>{{todo.date_created}}</td>
+        <td>
+          <a
+            href="/delete/{{todo.item}}"
+            type="button"
+            class="btn btn-outline-danger btn-sm mx-1"
+            >Delete</a
+          >
+          <a
+            href="/update/{{todo.item}}"
+            type="button"
+            class="btn btn-outline-warning btn-sm mx-1"
+            >Update</a
+          >
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  {% endif %}
+</div>
+
+{% endblock body %}

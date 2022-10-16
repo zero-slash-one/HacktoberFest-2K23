@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block body %}
+<div class="container my-5">
+  <h2>Update Todo Item</h2>
+  <form action="/update/{{todo.item}}" method="POST">
+    <div class="mb-3">
+      <label for="title" class="form-label">Title</label>
+      <input
+        type="text"
+        class="form-control"
+        name="title"
+        id="title"
+        aria-describedby="emailHelp"
+        value="{{todo.title}}"
+      />
+    </div>
+    <div class="mb-3">
+      <label for="desc" class="form-label">Description</label>
+      <input
+        type="text"
+        name="desc"
+        class="form-control"
+        id="desc"
+        value="{{todo.desc}}"
+      />
+    </div>
+
+    <button type="submit" class="btn btn-outline-success">Update</button>
+  </form>
+</div>
+
+{% endblock body %}
