@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Auth App</string>
+    <string name="invalid_credentials_msg">Invalid Credentials</string>
+    <string name="emailHint">E-mail Address</string>
+    <string name="passwordHint">Password</string>
+    <string name="resetPasswordMessage">If you\'re a registered user,an email has been sent to you to Reset Password.Kindly check you mail!</string>
+</resources>
