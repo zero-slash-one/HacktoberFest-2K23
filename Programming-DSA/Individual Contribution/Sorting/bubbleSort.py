@@ -1,6 +1,6 @@
 def bubbleSort(arr:list, n:int)->None:
     '''
-    Passing array and its size
+    Taking array and its size as arguments
     '''
     # iterate through every element of the array 
     for i in range(n):
