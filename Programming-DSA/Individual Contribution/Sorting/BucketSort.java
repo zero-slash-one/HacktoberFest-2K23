@@ -1,14 +1,13 @@
 // Java program to sort an array
 // using bucket sort
-import java.util.*;
 import java.util.Collections;
+import java.util.Vector;
 
-class GFG {
+public class BucketSort {
 
 	// Function to sort arr[] of size n
 	// using bucket sort
-	static void bucketSort(float arr[], int n)
-	{
+	static void bucketSort(float arr[], int n) {
 		if (n <= 0)
 			return;
 
@@ -23,7 +22,7 @@ class GFG {
 		// 2) Put array elements in different buckets
 		for (int i = 0; i < n; i++) {
 			float idx = arr[i] * n;
-			buckets[(int)idx].add(arr[i]);
+			buckets[(int) idx].add(arr[i]);
 		}
 
 		// 3) Sort individual buckets
@@ -41,11 +40,8 @@ class GFG {
 	}
 
 	// Driver code
-	public static void main(String args[])
-	{
-		float arr[] = { (float)0.897, (float)0.565,
-						(float)0.656, (float)0.1234,
-						(float)0.665, (float)0.3434 };
+	public static void main(String args[]) {
+		float arr[] = { (float) 0.897, (float) 0.565, (float) 0.656, (float) 0.1234, (float) 0.665, (float) 0.3434 };
 
 		int n = arr.length;
 		bucketSort(arr, n);
