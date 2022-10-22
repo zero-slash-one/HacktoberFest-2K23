@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.logo{
+    height : 40px;
+    width: 90px;
+    margin:10px 50px;
+    background-size: cover;
+    background-image : url('./assests/logo.png');
+
+}
+
+.home{
+    height : 90vh;
+}
