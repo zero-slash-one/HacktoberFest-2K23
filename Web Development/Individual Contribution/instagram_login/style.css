@@ -140,9 +140,12 @@ margin-right: 10px;
     justify-content: center;
 }
 
-.get-app>div>img{
+.get-app>div>a{
     width: 50%;
     flex: 1;
     margin: 0 5px;
+}
+.get-app>div>a>img{
+    width: 100%;
     object-fit: contain;
 }
