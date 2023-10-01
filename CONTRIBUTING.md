@@ -1,11 +1,11 @@
-# HacktoberFest 2022 :fire:
+# HacktoberFest 2023 :fire:
 
 > - HacktoberFest is back again. Showcase your coding skills by creating PRs and contributing to the Open Source.
 
 
 ### Let's Contribute :+1:
 
-- **Step 1** - Fork this repository.
+- **Step 1** - Register [here](https://hacktoberfest.com/) and Fork this repository.
 - **Step 2** - Clone the repository to your local machine.
 - **Step 3** - Navigate to the folder in which you want to contribute and keep the folder arragements in mind.
 - **Step 4** - If desired folder doesn't exist or you're making an individual contribution, create a folder according to the pattern of other folders.
